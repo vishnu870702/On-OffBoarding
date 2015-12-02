@@ -1,0 +1,13 @@
+server:
+  rootPath: '/api/*'
+  
+logging:
+   level: INFO
+
+assets:
+  overrides:
+    /: ../frontend/
+
+database:
+  path:
+   /: ../database/
