@@ -1,4 +1,4 @@
-angular.module('ContactManager', ['ngRoute'])
+angular.module('LineManger', ['ngRoute'])
 
 /*-----------------------------------
 | Routes
@@ -8,17 +8,17 @@ angular.module('ContactManager', ['ngRoute'])
 
     $routeProvider.when('/', {
         controller: 'indexCtrl',
-        templateUrl: '/assets/partials/index.html'
+        templateUrl: '/partials/index.html'
     })
 
     .when('/add-contact', {
         controller: 'addCtrl',
-        templateUrl: '/assets/partials/add.html'
+        templateUrl: '/partials/add.html'
     })
 
     .when('/contact/:id', {
         controller: 'contactCtrl',
-        templateUrl: '/assets/partials/contact.html'
+        templateUrl: '/partials/contact.html'
     })
 
     .otherwise({
